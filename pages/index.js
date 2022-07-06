@@ -82,8 +82,8 @@ const Home = () => (
           <NextLink href="https://linkfro.de" passHref scroll={false}>
             <Link>Linkfro</Link>
           </NextLink> a link-in-bio platform, <NextLink href="https://alfrica.com" passHref scroll={false}>
-            <Link>Alfrica</Link>
-          </NextLink> a black owned search engine. 
+          <Link>Alfrica</Link>
+          </NextLink>a black-owned search engine.
         </Paragraph>
         
       </Section>
@@ -94,11 +94,11 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2014 - 2018</BioYear>
-          Bachelor Electrical Engineering (RWTH Aachen University)
+          Electrical Engineering (RWTH Aachen University)
           </BioSection>
         <BioSection>
           <BioYear>2018 - 2021</BioYear>
-          Worked at m3connect as Software Engineer
+          Software Engineer at m3connect
         </BioSection>
         <BioSection>
           <BioYear>2021 to present</BioYear>
@@ -154,9 +154,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-
-        
       </Section>
     </Container>
   </Layout>
