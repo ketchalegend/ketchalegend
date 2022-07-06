@@ -81,9 +81,7 @@ const Home = () => (
           travelling around the world and meeting new people. Currently, he is working on different projects like {' '}
           <NextLink href="https://linkfro.de" passHref scroll={false}>
             <Link>Linkfro</Link>
-          </NextLink> a link-in-bio platform, <NextLink href="https://alfrica.com" passHref scroll={false}>
-          <Link>Alfrica</Link>
-          </NextLink>a black-owned search engine.
+          </NextLink> a link-in-bio platform
         </Paragraph>
         
       </Section>
