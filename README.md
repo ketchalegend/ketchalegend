@@ -9,9 +9,9 @@ Full Stack Developer passionate about building great products with AI & Automati
 <!-- STATS_START -->
 | Metric | Value |
 |--------|-------|
-| ⭐ Stars Given | 74 |
-| 📁 Public Repos | 5 |
-| 🔭 Total Commits (2025) | 0 |
+| ⭐ Stars Given | 2043 |
+| 📁 Public Repos | 20 |
+| 🔭 Total Commits (2026) | 17 |
 | 🔥 Current Streak | 0 days |
 | 📅 Longest Streak | 0 days |
 
