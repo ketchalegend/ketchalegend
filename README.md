@@ -20,9 +20,9 @@
 | 📊 **Metric** | 🔢 **Value** |
 |:--|--:|
 | ⭐ **Stars Given** | <!--TOTAL_STARS-->74<!--/TOTAL_STARS--> |
-| 📁 **Repositories** | <!--TOTAL_REPOS-->203<!--/TOTAL_REPOS--> |
+| 📁 **Repositories** | <!--TOTAL_REPOS-->204<!--/TOTAL_REPOS--> |
 | 💻 **Coding Hours** | <!--CODING_HOURS-->0<!--/CODING_HOURS--> |
-| 📝 **Total Commits** | <!--TOTAL_COMMITS-->2799<!--/TOTAL_COMMITS--> |
+| 📝 **Total Commits** | <!--TOTAL_COMMITS-->2804<!--/TOTAL_COMMITS--> |
 | 🔥 **Current Streak** | <!--STREAK_DAYS-->0<!--/STREAK_DAYS--> days |
 
 </div>
@@ -45,12 +45,16 @@
 
 > ⭐ **<!--TOTAL_STARS-->74<!--/TOTAL_STARS-->** repositories organized by my interests
 
-*Last updated: <!--LAST_UPDATED-->2026-03-14 14:11 UTC<!--/LAST_UPDATED-->*
+*Last updated: <!--LAST_UPDATED-->2026-03-14 14:16 UTC<!--/LAST_UPDATED-->*
 
 <!-- CATEGORIES_START -->
-<details>
-<summary>🤖 <b>AI Agents</b> (361 repos)</summary>
+*📊 1000 unique repositories (some repos match multiple categories)*
 
+<details>
+<summary>🤖 <b>AI Agents</b> (363 repos)</summary>
+
+- [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
+- [dolthub/dolt](https://github.com/dolthub/dolt)
 - [volcengine/OpenViking](https://github.com/volcengine/OpenViking)
 - [666ghj/MiroFish](https://github.com/666ghj/MiroFish)
 - [badlogic/pi-mono](https://github.com/badlogic/pi-mono)
@@ -59,15 +63,13 @@
 - [marcoaapfortes/Mantic.sh](https://github.com/marcoaapfortes/Mantic.sh)
 - [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban)
 - [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp)
-- [hangwin/mcp-chrome](https://github.com/hangwin/mcp-chrome)
-- [kbanc85/claudia](https://github.com/kbanc85/claudia)
 
-<i>... and 351 more</i>
+<i>... and 353 more</i>
 
 </details>
 
 <details>
-<summary>📦 <b>Other</b> (264 repos)</summary>
+<summary>📦 <b>Other</b> (263 repos)</summary>
 
 - [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 - [mcfunley/better-keynote-export](https://github.com/mcfunley/better-keynote-export)
@@ -80,14 +82,13 @@
 - [paper-design/liquid-logo](https://github.com/paper-design/liquid-logo)
 - [soloterm/solo](https://github.com/soloterm/solo)
 
-<i>... and 254 more</i>
+<i>... and 253 more</i>
 
 </details>
 
 <details>
-<summary>💻 <b>CLI & Terminal Tools</b> (263 repos)</summary>
+<summary>💻 <b>CLI & Terminal Tools</b> (125 unique, 263 total)</summary>
 
-- [badlogic/pi-mono](https://github.com/badlogic/pi-mono)
 - [vitest-dev/vitest](https://github.com/vitest-dev/vitest)
 - [d99kris/nchat](https://github.com/d99kris/nchat)
 - [jalonsogo/tui-studio](https://github.com/jalonsogo/tui-studio)
@@ -95,154 +96,153 @@
 - [sachaos/viddy](https://github.com/sachaos/viddy)
 - [RhetTbull/macnotesapp](https://github.com/RhetTbull/macnotesapp)
 - [simonw/rodney](https://github.com/simonw/rodney)
-- [marcoaapfortes/Mantic.sh](https://github.com/marcoaapfortes/Mantic.sh)
-- [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp)
+- [CodebuffAI/codebuff](https://github.com/CodebuffAI/codebuff)
+- [steipete/wacli](https://github.com/steipete/wacli)
+- [supreme-gg-gg/instagram-cli](https://github.com/supreme-gg-gg/instagram-cli)
 
-<i>... and 253 more</i>
+<i>... and 115 more</i>
 
 </details>
 
 <details>
-<summary>🛠️ <b>Developer Tools</b> (249 repos)</summary>
+<summary>🛠️ <b>Developer Tools</b> (78 unique, 248 total)</summary>
 
 - [meteor/meteor](https://github.com/meteor/meteor)
-- [vitest-dev/vitest](https://github.com/vitest-dev/vitest)
-- [memvid/memvid](https://github.com/memvid/memvid)
 - [geshan/developer-ambassador-programs](https://github.com/geshan/developer-ambassador-programs)
-- [marcoaapfortes/Mantic.sh](https://github.com/marcoaapfortes/Mantic.sh)
 - [meshery/meshery](https://github.com/meshery/meshery)
 - [mehdihadeli/awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
-- [bytedance/deer-flow](https://github.com/bytedance/deer-flow)
-- [spacedriveapp/spacebot](https://github.com/spacedriveapp/spacebot)
-- [superset-sh/superset](https://github.com/superset-sh/superset)
-
-<i>... and 239 more</i>
-
-</details>
-
-<details>
-<summary>☁️ <b>Infrastructure & DevOps</b> (107 repos)</summary>
-
-- [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)
-- [geshan/developer-ambassador-programs](https://github.com/geshan/developer-ambassador-programs)
-- [meshery/meshery](https://github.com/meshery/meshery)
-- [goharbor/harbor](https://github.com/goharbor/harbor)
-- [EvolutionAPI/evolution-api](https://github.com/EvolutionAPI/evolution-api)
-- [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw)
-- [blitzbrowser/blitzbrowser](https://github.com/blitzbrowser/blitzbrowser)
-- [cloudflare/agents](https://github.com/cloudflare/agents)
-- [TimoKoerber/laravel-one-time-operations](https://github.com/TimoKoerber/laravel-one-time-operations)
-- [opencost/opencost](https://github.com/opencost/opencost)
-
-<i>... and 97 more</i>
-
-</details>
-
-<details>
-<summary>💬 <b>Communication</b> (92 repos)</summary>
-
-- [badlogic/pi-mono](https://github.com/badlogic/pi-mono)
-- [d99kris/nchat](https://github.com/d99kris/nchat)
-- [EvolutionAPI/evolution-api](https://github.com/EvolutionAPI/evolution-api)
-- [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
-- [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)
-- [steipete/wacli](https://github.com/steipete/wacli)
-- [spacedriveapp/spacebot](https://github.com/spacedriveapp/spacebot)
-- [basecamp/once-campfire](https://github.com/basecamp/once-campfire)
-- [googleworkspace/cli](https://github.com/googleworkspace/cli)
-- [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw)
-
-<i>... and 82 more</i>
-
-</details>
-
-<details>
-<summary>🗄️ <b>Databases & Storage</b> (81 repos)</summary>
-
-- [meteor/meteor](https://github.com/meteor/meteor)
-- [volcengine/OpenViking](https://github.com/volcengine/OpenViking)
-- [spatie/once](https://github.com/spatie/once)
-- [memvid/memvid](https://github.com/memvid/memvid)
-- [eugene1g/agent-safehouse](https://github.com/eugene1g/agent-safehouse)
-- [bytedance/deer-flow](https://github.com/bytedance/deer-flow)
-- [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
-- [shanraisshan/claude-code-voice-hooks](https://github.com/shanraisshan/claude-code-voice-hooks)
 - [get-convex/convex-backend](https://github.com/get-convex/convex-backend)
-- [Decimation/SmartImage](https://github.com/Decimation/SmartImage)
+- [vercel-labs/webreel](https://github.com/vercel-labs/webreel)
+- [hyvor/relay](https://github.com/hyvor/relay)
+- [TimoKoerber/laravel-one-time-operations](https://github.com/TimoKoerber/laravel-one-time-operations)
+- [i5heu/ublock-hide-yt-shorts](https://github.com/i5heu/ublock-hide-yt-shorts)
+- [clockworklabs/SpacetimeDB](https://github.com/clockworklabs/SpacetimeDB)
 
-<i>... and 71 more</i>
-
-</details>
-
-<details>
-<summary>🕷️ <b>Web Scraping</b> (74 repos)</summary>
-
-- [hangwin/mcp-chrome](https://github.com/hangwin/mcp-chrome)
-- [spacedriveapp/spacebot](https://github.com/spacedriveapp/spacebot)
-- [googleworkspace/cli](https://github.com/googleworkspace/cli)
-- [fugazi/test-automation-skills-agents](https://github.com/fugazi/test-automation-skills-agents)
-- [blitzbrowser/blitzbrowser](https://github.com/blitzbrowser/blitzbrowser)
-- [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi)
-- [getmaxun/maxun](https://github.com/getmaxun/maxun)
-- [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
-- [MiniCodeMonkey/chief](https://github.com/MiniCodeMonkey/chief)
-- [rudrankriyam/App-Store-Connect-CLI](https://github.com/rudrankriyam/App-Store-Connect-CLI)
-
-<i>... and 64 more</i>
+<i>... and 68 more</i>
 
 </details>
 
 <details>
-<summary>🗣️ <b>Voice & TTS</b> (66 repos)</summary>
+<summary>🗣️ <b>Voice & TTS</b> (44 unique, 66 total)</summary>
 
 - [cjpais/Handy](https://github.com/cjpais/Handy)
 - [jamiepine/voicebox](https://github.com/jamiepine/voicebox)
 - [HumeAI/tada](https://github.com/HumeAI/tada)
 - [peteonrails/voxtype](https://github.com/peteonrails/voxtype)
-- [shanraisshan/claude-code-voice-hooks](https://github.com/shanraisshan/claude-code-voice-hooks)
 - [andimarafioti/faster-qwen3-tts](https://github.com/andimarafioti/faster-qwen3-tts)
 - [moeru-ai/airi](https://github.com/moeru-ai/airi)
 - [zachlatta/freeflow](https://github.com/zachlatta/freeflow)
 - [ronitsingh10/FineTune](https://github.com/ronitsingh10/FineTune)
 - [nari-labs/dia](https://github.com/nari-labs/dia)
-
-<i>... and 56 more</i>
-
-</details>
-
-<details>
-<summary>🔗 <b>MCP & Protocols</b> (64 repos)</summary>
-
-- [open-webui/open-webui](https://github.com/open-webui/open-webui)
-- [marcoaapfortes/Mantic.sh](https://github.com/marcoaapfortes/Mantic.sh)
-- [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp)
-- [hangwin/mcp-chrome](https://github.com/hangwin/mcp-chrome)
-- [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)
-- [superset-sh/superset](https://github.com/superset-sh/superset)
-- [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
-- [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
-- [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot)
-- [steipete/Peekaboo](https://github.com/steipete/Peekaboo)
-
-<i>... and 54 more</i>
-
-</details>
-
-<details>
-<summary>🔒 <b>Security & Pentesting</b> (44 repos)</summary>
-
-- [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)
-- [eugene1g/agent-safehouse](https://github.com/eugene1g/agent-safehouse)
-- [Arcanum-Sec/sec-context](https://github.com/Arcanum-Sec/sec-context)
-- [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
-- [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
-- [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi)
-- [sunspikes/clamav-validator](https://github.com/sunspikes/clamav-validator)
-- [pocketpaw/pocketpaw](https://github.com/pocketpaw/pocketpaw)
-- [caddyserver/caddy](https://github.com/caddyserver/caddy)
-- [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)
+- [tobi/AudioPriorityBar](https://github.com/tobi/AudioPriorityBar)
 
 <i>... and 34 more</i>
+
+</details>
+
+<details>
+<summary>🔒 <b>Security & Pentesting</b> (29 unique, 44 total)</summary>
+
+- [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)
+- [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
+- [sunspikes/clamav-validator](https://github.com/sunspikes/clamav-validator)
+- [caddyserver/caddy](https://github.com/caddyserver/caddy)
+- [ramonvermeulen/whosthere](https://github.com/ramonvermeulen/whosthere)
+- [Lissy93/web-check](https://github.com/Lissy93/web-check)
+- [x011/smtp-tunnel-proxy](https://github.com/x011/smtp-tunnel-proxy)
+- [maxgoedjen/secretive](https://github.com/maxgoedjen/secretive)
+- [gommzystudio/device-activity-tracker](https://github.com/gommzystudio/device-activity-tracker)
+- [BrowserBox/BrowserBox](https://github.com/BrowserBox/BrowserBox)
+
+<i>... and 19 more</i>
+
+</details>
+
+<details>
+<summary>☁️ <b>Infrastructure & DevOps</b> (27 unique, 107 total)</summary>
+
+- [goharbor/harbor](https://github.com/goharbor/harbor)
+- [opencost/opencost](https://github.com/opencost/opencost)
+- [anderspitman/awesome-tunneling](https://github.com/anderspitman/awesome-tunneling)
+- [psviderski/unregistry](https://github.com/psviderski/unregistry)
+- [floccusaddon/floccus](https://github.com/floccusaddon/floccus)
+- [dreamhunter2333/cloudflare_temp_email](https://github.com/dreamhunter2333/cloudflare_temp_email)
+- [databuddy-analytics/Databuddy](https://github.com/databuddy-analytics/Databuddy)
+- [pulumi/pulumi](https://github.com/pulumi/pulumi)
+- [dennisklappe/CloudMeet](https://github.com/dennisklappe/CloudMeet)
+- [spieglt/FlyingCarpet](https://github.com/spieglt/FlyingCarpet)
+
+<i>... and 17 more</i>
+
+</details>
+
+<details>
+<summary>🗄️ <b>Databases & Storage</b> (24 unique, 82 total)</summary>
+
+- [spatie/once](https://github.com/spatie/once)
+- [pgsty/pg_exporter](https://github.com/pgsty/pg_exporter)
+- [directus/directus](https://github.com/directus/directus)
+- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases)
+- [dannyl1u/doppelganger](https://github.com/dannyl1u/doppelganger)
+- [resend/resend-webhooks-ingester](https://github.com/resend/resend-webhooks-ingester)
+- [rclone/rclone](https://github.com/rclone/rclone)
+- [tigerbeetle/tigerbeetle](https://github.com/tigerbeetle/tigerbeetle)
+- [OpenSignLabs/OpenSign](https://github.com/OpenSignLabs/OpenSign)
+- [tomatophp/filament-language-switcher](https://github.com/tomatophp/filament-language-switcher)
+
+<i>... and 14 more</i>
+
+</details>
+
+<details>
+<summary>🕷️ <b>Web Scraping</b> (19 unique, 74 total)</summary>
+
+- [blitzbrowser/blitzbrowser](https://github.com/blitzbrowser/blitzbrowser)
+- [rudrankriyam/App-Store-Connect-CLI](https://github.com/rudrankriyam/App-Store-Connect-CLI)
+- [spatie/laravel-screenshot](https://github.com/spatie/laravel-screenshot)
+- [omkarcloud/botasaurus](https://github.com/omkarcloud/botasaurus)
+- [bertrandom/chrome-cookies-secure](https://github.com/bertrandom/chrome-cookies-secure)
+- [Aran404/SpotAPI](https://github.com/Aran404/SpotAPI)
+- [tiagozip/cap](https://github.com/tiagozip/cap)
+- [koush/scrypted](https://github.com/koush/scrypted)
+- [cporter202/scraping-apis-for-devs](https://github.com/cporter202/scraping-apis-for-devs)
+- [openzim/zimit](https://github.com/openzim/zimit)
+
+<i>... and 9 more</i>
+
+</details>
+
+<details>
+<summary>🔗 <b>MCP & Protocols</b> (18 unique, 64 total)</summary>
+
+- [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
+- [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)
+- [21st-dev/magic-mcp](https://github.com/21st-dev/magic-mcp)
+- [github/github-mcp-server](https://github.com/github/github-mcp-server)
+- [punkpeye/fastmcp](https://github.com/punkpeye/fastmcp)
+- [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector)
+- [exa-labs/exa-mcp-server](https://github.com/exa-labs/exa-mcp-server)
+- [laravel/mcp](https://github.com/laravel/mcp)
+- [php-mcp/laravel](https://github.com/php-mcp/laravel)
+- [janwilmake/universal-mcp-oauth](https://github.com/janwilmake/universal-mcp-oauth)
+
+<i>... and 8 more</i>
+
+</details>
+
+<details>
+<summary>💬 <b>Communication</b> (10 unique, 92 total)</summary>
+
+- [basecamp/once-campfire](https://github.com/basecamp/once-campfire)
+- [intern3-chat/intern3-chat](https://github.com/intern3-chat/intern3-chat)
+- [ZekeSnider/Jared](https://github.com/ZekeSnider/Jared)
+- [kamailio/kamailio](https://github.com/kamailio/kamailio)
+- [HuLaSpark/HuLa](https://github.com/HuLaSpark/HuLa)
+- [permissionlesstech/bitchat-android](https://github.com/permissionlesstech/bitchat-android)
+- [permissionlesstech/bitchat](https://github.com/permissionlesstech/bitchat)
+- [Billionmail/BillionMail](https://github.com/Billionmail/BillionMail)
+- [freqtrade/freqtrade](https://github.com/freqtrade/freqtrade)
+- [pnd280/complexity](https://github.com/pnd280/complexity)
 
 </details>
 
