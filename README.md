@@ -54,8 +54,16 @@ I organize my 2044+ starred repositories using [GitHub Stars Auto-Categorizer](h
 - Backend: Laravel, Django, Express.js
 - Frontend: React, Next.js, Vue.js, Livewire
 - Mobile: Flutter
-- DevOps: Docker, GitHub Actions, AWS
+- DevOps: Docker, GitHub Actions, AWS, DigitalOcean, Hetzner, Vercel, Cloudflare
 - Databases: PostgreSQL, MySQL, MongoDB, Redis
+- Testing: pytest, Playwright
+- API: REST, GraphQL, Apollo GraphQL, Postman
+
+**🤖 AI & Automation:**
+- AI Assistants: Claude Code, GitHub Copilot/Codex, Gemini
+- RAG (Retrieval-Augmented Generation)
+- Voice: ElevenLabs
+- Testing & API Automation
 
 ---
 
