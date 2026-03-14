@@ -2,7 +2,7 @@ name: 📊 Update GitHub Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Daily at midnight UTC
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -23,25 +23,16 @@ jobs:
             const username = context.repo.owner;
             const currentYear = new Date().getFullYear();
 
-            // GraphQL query for comprehensive stats
             const query = `
               query($username: String!) {
                 user(login: $username) {
-                  starredRepositories {
-                    totalCount
-                  }
-                  repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
-                    totalCount
-                  }
+                  starredRepositories { totalCount }
+                  repositories(ownerAffiliations: OWNER, isFork: false, first: 100) { totalCount }
                   contributionsCollection {
                     totalCommitContributions
                     contributionCalendar {
-                      totalContributions
                       weeks {
-                        contributionDays {
-                          contributionCount
-                          date
-                        }
+                        contributionDays { contributionCount date }
                       }
                     }
                   }
@@ -52,40 +43,29 @@ jobs:
             const result = await github.graphql(query, { username });
             const user = result.user;
 
-            // Extract stats
             const starsCount = user.starredRepositories.totalCount;
             const publicRepos = user.repositories.totalCount;
             const totalCommits = user.contributionsCollection.totalCommitContributions;
 
-            // Calculate streak from contribution calendar
             const weeks = user.contributionsCollection.contributionCalendar.weeks;
             const days = weeks.flatMap(w => w.contributionDays);
 
-            // Calculate current streak
             let currentStreak = 0;
             const today = new Date().toISOString().split('T')[0];
 
-            // Check from most recent day backwards
             for (let i = days.length - 1; i >= 0; i--) {
               const day = days[i];
-              const dayDate = day.date;
-
-              // Skip future dates
-              if (dayDate > today) continue;
-
+              if (day.date > today) continue;
               if (day.contributionCount > 0) {
                 currentStreak++;
               } else {
-                // If it's today and no contributions, don't break streak yet
-                if (dayDate === today) continue;
+                if (day.date === today) continue;
                 break;
               }
             }
 
-            // Calculate longest streak
             let longestStreak = 0;
             let tempStreak = 0;
-
             for (const day of days) {
               if (day.contributionCount > 0) {
                 tempStreak++;
@@ -95,9 +75,7 @@ jobs:
               }
             }
 
-            // Format date
-            const now = new Date();
-            const dateStr = now.toISOString().split('T')[0];
+            const dateStr = new Date().toISOString().split('T')[0];
 
             core.setOutput('stars', starsCount);
             core.setOutput('repos', publicRepos);
@@ -108,16 +86,15 @@ jobs:
             core.setOutput('year', currentYear);
 
       - name: Update README
-        shell: bash
+        env:
+          STARS: ${{ steps.stats.outputs.stars }}
+          REPOS: ${{ steps.stats.outputs.repos }}
+          COMMITS: ${{ steps.stats.outputs.commits }}
+          STREAK: ${{ steps.stats.outputs.streak }}
+          LONGEST: ${{ steps.stats.outputs.longest_streak }}
+          DATE: ${{ steps.stats.outputs.date }}
+          YEAR: ${{ steps.stats.outputs.year }}
         run: |
-          STARS="${{ steps.stats.outputs.stars }}"
-          REPOS="${{ steps.stats.outputs.repos }}"
-          COMMITS="${{ steps.stats.outputs.commits }}"
-          STREAK="${{ steps.stats.outputs.streak }}"
-          LONGEST="${{ steps.stats.outputs.longest_streak }}"
-          DATE="${{ steps.stats.outputs.date }}"
-          YEAR="${{ steps.stats.outputs.year }}"
-
           sed -i "s/⭐ Stars Given | [0-9]*/⭐ Stars Given | $STARS/" README.md
           sed -i "s/📁 Public Repos | [0-9]*/📁 Public Repos | $REPOS/" README.md
           sed -i "s/🔭 Total Commits ([0-9]*) | [0-9]*/🔭 Total Commits ($YEAR) | $COMMITS/" README.md
@@ -126,7 +103,6 @@ jobs:
           sed -i "s/Last updated: [0-9-]*/Last updated: $DATE/" README.md
 
       - name: Commit and push
-        shell: bash
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
