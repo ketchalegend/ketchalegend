@@ -12,60 +12,99 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      
+
       - name: Update Stats
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const readme = fs.readFileSync('README.md', 'utf8');
-            
-            // Get stats via GraphQL
+            let readme = fs.readFileSync('README.md', 'utf8');
+
+            // Get comprehensive stats via GraphQL
             const query = `
               query($login: String!) {
                 user(login: $login) {
                   starredRepositories { totalCount }
-                  repositories(ownerAffiliations: OWNER, isFork: false, first: 100) { totalCount }
+                  repositories(ownerAffiliations: OWNER, isFork: false, first: 1) {
+                    totalCount
+                  }
                   contributionsCollection {
                     totalCommitContributions
+                    contributionCalendar {
+                      totalContributions
+                      weeks {
+                        contributionDays {
+                          contributionCount
+                          date
+                        }
+                      }
+                    }
                   }
                 }
               }
             `;
-            
+
             const result = await github.graphql(query, { login: context.repo.owner });
             const user = result.user;
-            
-            const stars = user.starredRepositories.totalCount;
-            const repos = user.repositories.totalCount;
-            const commits = user.contributionsCollection.totalCommitContributions;
+
+            const starsGiven = user.starredRepositories.totalCount;
+            const totalRepos = user.repositories.totalCount;
+            const totalContributions = user.contributionsCollection.contributionCalendar.totalContributions;
+
+            // Calculate streaks from contribution calendar
+            const weeks = user.contributionsCollection.contributionCalendar.weeks;
+            const days = weeks.flatMap(w => w.contributionDays);
+
+            // Calculate current streak (from today backwards)
+            let currentStreak = 0;
             const today = new Date().toISOString().split('T')[0];
-            const year = new Date().getFullYear();
-            
-            // Update README
-            let updated = readme
-              .replace(/⭐ Stars Given \| \d+/, `⭐ Stars Given | ${stars}`)
-              .replace(/📁 Public Repos \| \d+/, `📁 Public Repos | ${repos}`)
-              .replace(/🔭 Total Commits \(\d+\) \| \d+/, `🔭 Total Commits (${year}) | ${commits}`)
-              .replace(/Last updated: [\d-]+/, `Last updated: ${today}`);
-            
-            fs.writeFileSync('README.md', updated);
-            
-            // Git config and commit
-            const { execSync } = require('child_process');
-            execSync('git config user.email "action@github.com"');
-            execSync('git config user.name "GitHub Action"');
-            execSync('git add README.md');
-            
-            try {
-              execSync('git diff --staged --quiet');
-              console.log('No changes to commit');
-            } catch {
-              execSync(`git commit -m "Update stats - ${today}"`);
-              execSync('git push');
+            let longestStreak = 0;
+            let tempStreak = 0;
+
+            // Calculate longest streak
+            for (const day of days) {
+              if (day.contributionCount > 0) {
+                tempStreak++;
+                longestStreak = Math.max(longestStreak, tempStreak);
+              } else {
+                tempStreak = 0;
+              }
             }
+
+            // Calculate current streak (from most recent day backwards)
+            for (let i = days.length - 1; i >= 0; i--) {
+              const day = days[i];
+              if (day.date > today) continue;
+              if (day.contributionCount > 0) {
+                currentStreak++;
+              } else {
+                if (day.date === today) continue; // Don't break if today has no commits yet
+                break;
+              }
+            }
+
+            const todayStr = new Date().toISOString().split('T')[0];
+
+            // Update README with new stats
+            readme = readme
+              .replace(/⭐ Stars Given \| \d+/g, `⭐ Stars Given | ${starsGiven}`)
+              .replace(/📊 Total Contributions \| \d+/g, `📊 Total Contributions | ${totalContributions}`)
+              .replace(/🔥 Current Streak \| \d+ days/g, `🔥 Current Streak | ${currentStreak} days`)
+              .replace(/🏆 Longest Streak \| \d+ days/g, `🏆 Longest Streak | ${longestStreak} days`)
+              .replace(/Last updated: [\d-]+/g, `Last updated: ${todayStr}`);
+
+            fs.writeFileSync('README.md', readme);
+            console.log(`Updated stats: Stars: ${starsGiven}, Contributions: ${totalContributions}, Current Streak: ${currentStreak}, Longest Streak: ${longestStreak}`);
+
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Update GitHub stats - $(date +%Y-%m-%d)"
+            git push
+          fi
+</content>
