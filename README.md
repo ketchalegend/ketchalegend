@@ -22,7 +22,7 @@
 | ⭐ **Stars Given** | <!--TOTAL_STARS-->74<!--/TOTAL_STARS--> |
 | 📁 **Repositories** | <!--TOTAL_REPOS-->204<!--/TOTAL_REPOS--> |
 | 💻 **Coding Hours** | <!--CODING_HOURS-->0<!--/CODING_HOURS--> |
-| 📝 **Total Commits** | <!--TOTAL_COMMITS-->2806<!--/TOTAL_COMMITS--> |
+| 📝 **Total Commits** | <!--TOTAL_COMMITS-->2808<!--/TOTAL_COMMITS--> |
 | 🔥 **Current Streak** | <!--STREAK_DAYS-->0<!--/STREAK_DAYS--> days |
 
 </div>
@@ -45,204 +45,118 @@
 
 > ⭐ **<!--TOTAL_STARS-->74<!--/TOTAL_STARS-->** repositories organized by my interests
 
-*Last updated: <!--LAST_UPDATED-->2026-03-14 14:18 UTC<!--/LAST_UPDATED-->*
+*Last updated: <!--LAST_UPDATED-->2026-03-14 14:20 UTC<!--/LAST_UPDATED-->*
 
 <!-- CATEGORIES_START -->
-*📊 74 total starred repositories organized into 11 categories*
+*📊 74 total starred repositories organized into 10 categories*
 
 <details>
-<summary>🤖 <b>AI Agents</b> (363)</summary>
+<summary>🤖 <b>AI Agents</b> (30)</summary>
 
-- [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
-- [dolthub/dolt](https://github.com/dolthub/dolt)
-- [volcengine/OpenViking](https://github.com/volcengine/OpenViking)
 - [666ghj/MiroFish](https://github.com/666ghj/MiroFish)
-- [badlogic/pi-mono](https://github.com/badlogic/pi-mono)
-- [memvid/memvid](https://github.com/memvid/memvid)
-- [open-webui/open-webui](https://github.com/open-webui/open-webui)
-- [marcoaapfortes/Mantic.sh](https://github.com/marcoaapfortes/Mantic.sh)
 - [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban)
-- [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp)
+- [Arcanum-Sec/sec-context](https://github.com/Arcanum-Sec/sec-context)
+- [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant)
+- [ChrisWiles/claude-code-showcase](https://github.com/ChrisWiles/claude-code-showcase)
+- [ColeMurray/background-agents](https://github.com/ColeMurray/background-agents)
+- [Dicklesworthstone/agentic_coding_flywheel_setup](https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup)
+- [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot)
+- [ComposioHQ/open-claude-cowork](https://github.com/ComposioHQ/open-claude-cowork)
+- [Dimillian/CodexMonitor](https://github.com/Dimillian/CodexMonitor)
 
-<i>... and 353 more</i>
-
-</details>
-
-<details>
-<summary>📦 <b>Other</b> (263)</summary>
-
-- [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
-- [mcfunley/better-keynote-export](https://github.com/mcfunley/better-keynote-export)
-- [trpc/trpc](https://github.com/trpc/trpc)
-- [RobertD502/TeamsStatusMacOS](https://github.com/RobertD502/TeamsStatusMacOS)
-- [onnx/onnx](https://github.com/onnx/onnx)
-- [HKUDS/nanobot](https://github.com/HKUDS/nanobot)
-- [andrewyng/context-hub](https://github.com/andrewyng/context-hub)
-- [samyk/openraman](https://github.com/samyk/openraman)
-- [paper-design/liquid-logo](https://github.com/paper-design/liquid-logo)
-- [soloterm/solo](https://github.com/soloterm/solo)
-
-<i>... and 253 more</i>
+<i>... and 20 more</i>
 
 </details>
 
 <details>
-<summary>💻 <b>CLI & Terminal Tools</b> (125)</summary>
+<summary>📦 <b>Other</b> (16)</summary>
 
-- [vitest-dev/vitest](https://github.com/vitest-dev/vitest)
-- [d99kris/nchat](https://github.com/d99kris/nchat)
-- [jalonsogo/tui-studio](https://github.com/jalonsogo/tui-studio)
-- [o2sh/onefetch](https://github.com/o2sh/onefetch)
-- [sachaos/viddy](https://github.com/sachaos/viddy)
-- [RhetTbull/macnotesapp](https://github.com/RhetTbull/macnotesapp)
-- [simonw/rodney](https://github.com/simonw/rodney)
+- [Conway-Research/automaton](https://github.com/Conway-Research/automaton)
+- [Done-0/fuck-u-code](https://github.com/Done-0/fuck-u-code)
+- [AmintaCCCP/GithubStarsManager](https://github.com/AmintaCCCP/GithubStarsManager)
+- [AnmolSaini16/mapcn](https://github.com/AnmolSaini16/mapcn)
+- [Afilmory/afilmory](https://github.com/Afilmory/afilmory)
+- [BrowserWorks/waterfox](https://github.com/BrowserWorks/waterfox)
+- [EmilStenstrom/justhtml](https://github.com/EmilStenstrom/justhtml)
+- [DayuanJiang/next-ai-draw-io](https://github.com/DayuanJiang/next-ai-draw-io)
+- [Brkgng/ScrollSnap](https://github.com/Brkgng/ScrollSnap)
+- [CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
+
+<i>... and 6 more</i>
+
+</details>
+
+<details>
+<summary>💻 <b>CLI & Terminal Tools</b> (14)</summary>
+
 - [CodebuffAI/codebuff](https://github.com/CodebuffAI/codebuff)
-- [steipete/wacli](https://github.com/steipete/wacli)
-- [supreme-gg-gg/instagram-cli](https://github.com/supreme-gg-gg/instagram-cli)
+- [Decimation/SmartImage](https://github.com/Decimation/SmartImage)
+- [ELPROFUG0/TexTab](https://github.com/ELPROFUG0/TexTab)
+- [Archeb/opentrace](https://github.com/Archeb/opentrace)
+- [Bahaaio/pomo](https://github.com/Bahaaio/pomo)
+- [AyuGram/AyuGramDesktop](https://github.com/AyuGram/AyuGramDesktop)
+- [666OS/ClashMac](https://github.com/666OS/ClashMac)
+- [Adaptix-Framework/AdaptixC2](https://github.com/Adaptix-Framework/AdaptixC2)
+- [AppHouseKitchen/AlDente-Battery_Care_and_Monitoring](https://github.com/AppHouseKitchen/AlDente-Battery_Care_and_Monitoring)
+- [CodeWithKyrian/chromadb-laravel](https://github.com/CodeWithKyrian/chromadb-laravel)
 
-<i>... and 115 more</i>
-
-</details>
-
-<details>
-<summary>🛠️ <b>Developer Tools</b> (78)</summary>
-
-- [meteor/meteor](https://github.com/meteor/meteor)
-- [geshan/developer-ambassador-programs](https://github.com/geshan/developer-ambassador-programs)
-- [meshery/meshery](https://github.com/meshery/meshery)
-- [mehdihadeli/awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)
-- [get-convex/convex-backend](https://github.com/get-convex/convex-backend)
-- [vercel-labs/webreel](https://github.com/vercel-labs/webreel)
-- [hyvor/relay](https://github.com/hyvor/relay)
-- [TimoKoerber/laravel-one-time-operations](https://github.com/TimoKoerber/laravel-one-time-operations)
-- [i5heu/ublock-hide-yt-shorts](https://github.com/i5heu/ublock-hide-yt-shorts)
-- [clockworklabs/SpacetimeDB](https://github.com/clockworklabs/SpacetimeDB)
-
-<i>... and 68 more</i>
+<i>... and 4 more</i>
 
 </details>
 
 <details>
-<summary>🗣️ <b>Voice & TTS</b> (44)</summary>
+<summary>🛠️ <b>Developer Tools</b> (4)</summary>
 
-- [cjpais/Handy](https://github.com/cjpais/Handy)
-- [jamiepine/voicebox](https://github.com/jamiepine/voicebox)
-- [HumeAI/tada](https://github.com/HumeAI/tada)
-- [peteonrails/voxtype](https://github.com/peteonrails/voxtype)
-- [andimarafioti/faster-qwen3-tts](https://github.com/andimarafioti/faster-qwen3-tts)
-- [moeru-ai/airi](https://github.com/moeru-ai/airi)
-- [zachlatta/freeflow](https://github.com/zachlatta/freeflow)
-- [ronitsingh10/FineTune](https://github.com/ronitsingh10/FineTune)
-- [nari-labs/dia](https://github.com/nari-labs/dia)
-- [tobi/AudioPriorityBar](https://github.com/tobi/AudioPriorityBar)
-
-<i>... and 34 more</i>
+- [1adrianb/face-alignment](https://github.com/1adrianb/face-alignment)
+- [CMU-Perceptual-Computing-Lab/openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)
+- [Codehagen/Prismui](https://github.com/Codehagen/Prismui)
+- [3b1b/manim](https://github.com/3b1b/manim)
 
 </details>
 
 <details>
-<summary>🔒 <b>Security & Pentesting</b> (29)</summary>
-
-- [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)
-- [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
-- [sunspikes/clamav-validator](https://github.com/sunspikes/clamav-validator)
-- [caddyserver/caddy](https://github.com/caddyserver/caddy)
-- [ramonvermeulen/whosthere](https://github.com/ramonvermeulen/whosthere)
-- [Lissy93/web-check](https://github.com/Lissy93/web-check)
-- [x011/smtp-tunnel-proxy](https://github.com/x011/smtp-tunnel-proxy)
-- [maxgoedjen/secretive](https://github.com/maxgoedjen/secretive)
-- [gommzystudio/device-activity-tracker](https://github.com/gommzystudio/device-activity-tracker)
-- [BrowserBox/BrowserBox](https://github.com/BrowserBox/BrowserBox)
-
-<i>... and 19 more</i>
-
-</details>
-
-<details>
-<summary>☁️ <b>Infrastructure & DevOps</b> (27)</summary>
-
-- [goharbor/harbor](https://github.com/goharbor/harbor)
-- [opencost/opencost](https://github.com/opencost/opencost)
-- [anderspitman/awesome-tunneling](https://github.com/anderspitman/awesome-tunneling)
-- [psviderski/unregistry](https://github.com/psviderski/unregistry)
-- [floccusaddon/floccus](https://github.com/floccusaddon/floccus)
-- [dreamhunter2333/cloudflare_temp_email](https://github.com/dreamhunter2333/cloudflare_temp_email)
-- [databuddy-analytics/Databuddy](https://github.com/databuddy-analytics/Databuddy)
-- [pulumi/pulumi](https://github.com/pulumi/pulumi)
-- [dennisklappe/CloudMeet](https://github.com/dennisklappe/CloudMeet)
-- [spieglt/FlyingCarpet](https://github.com/spieglt/FlyingCarpet)
-
-<i>... and 17 more</i>
-
-</details>
-
-<details>
-<summary>🗄️ <b>Databases & Storage</b> (24)</summary>
-
-- [spatie/once](https://github.com/spatie/once)
-- [pgsty/pg_exporter](https://github.com/pgsty/pg_exporter)
-- [directus/directus](https://github.com/directus/directus)
-- [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases)
-- [dannyl1u/doppelganger](https://github.com/dannyl1u/doppelganger)
-- [resend/resend-webhooks-ingester](https://github.com/resend/resend-webhooks-ingester)
-- [rclone/rclone](https://github.com/rclone/rclone)
-- [tigerbeetle/tigerbeetle](https://github.com/tigerbeetle/tigerbeetle)
-- [OpenSignLabs/OpenSign](https://github.com/OpenSignLabs/OpenSign)
-- [tomatophp/filament-language-switcher](https://github.com/tomatophp/filament-language-switcher)
-
-<i>... and 14 more</i>
-
-</details>
-
-<details>
-<summary>🕷️ <b>Web Scraping</b> (19)</summary>
-
-- [blitzbrowser/blitzbrowser](https://github.com/blitzbrowser/blitzbrowser)
-- [rudrankriyam/App-Store-Connect-CLI](https://github.com/rudrankriyam/App-Store-Connect-CLI)
-- [spatie/laravel-screenshot](https://github.com/spatie/laravel-screenshot)
-- [omkarcloud/botasaurus](https://github.com/omkarcloud/botasaurus)
-- [bertrandom/chrome-cookies-secure](https://github.com/bertrandom/chrome-cookies-secure)
-- [Aran404/SpotAPI](https://github.com/Aran404/SpotAPI)
-- [tiagozip/cap](https://github.com/tiagozip/cap)
-- [koush/scrypted](https://github.com/koush/scrypted)
-- [cporter202/scraping-apis-for-devs](https://github.com/cporter202/scraping-apis-for-devs)
-- [openzim/zimit](https://github.com/openzim/zimit)
-
-<i>... and 9 more</i>
-
-</details>
-
-<details>
-<summary>🔗 <b>MCP & Protocols</b> (18)</summary>
+<summary>🔗 <b>MCP & Protocols</b> (2)</summary>
 
 - [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
-- [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)
 - [21st-dev/magic-mcp](https://github.com/21st-dev/magic-mcp)
-- [github/github-mcp-server](https://github.com/github/github-mcp-server)
-- [punkpeye/fastmcp](https://github.com/punkpeye/fastmcp)
-- [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector)
-- [exa-labs/exa-mcp-server](https://github.com/exa-labs/exa-mcp-server)
-- [laravel/mcp](https://github.com/laravel/mcp)
-- [php-mcp/laravel](https://github.com/php-mcp/laravel)
-- [janwilmake/universal-mcp-oauth](https://github.com/janwilmake/universal-mcp-oauth)
-
-<i>... and 8 more</i>
 
 </details>
 
 <details>
-<summary>💬 <b>Communication</b> (10)</summary>
+<summary>🗣️ <b>Voice & TTS</b> (2)</summary>
 
-- [basecamp/once-campfire](https://github.com/basecamp/once-campfire)
-- [intern3-chat/intern3-chat](https://github.com/intern3-chat/intern3-chat)
-- [ZekeSnider/Jared](https://github.com/ZekeSnider/Jared)
-- [kamailio/kamailio](https://github.com/kamailio/kamailio)
-- [HuLaSpark/HuLa](https://github.com/HuLaSpark/HuLa)
-- [permissionlesstech/bitchat-android](https://github.com/permissionlesstech/bitchat-android)
-- [permissionlesstech/bitchat](https://github.com/permissionlesstech/bitchat)
+- [ElegantEngineeringTech/laravel-invoices](https://github.com/ElegantEngineeringTech/laravel-invoices)
+- [DrewThomasson/ebook2audiobook](https://github.com/DrewThomasson/ebook2audiobook)
+
+</details>
+
+<details>
+<summary>🕷️ <b>Web Scraping</b> (2)</summary>
+
+- [Aran404/SpotAPI](https://github.com/Aran404/SpotAPI)
+- [Avaiga/taipy](https://github.com/Avaiga/taipy)
+
+</details>
+
+<details>
+<summary>🗄️ <b>Databases & Storage</b> (2)</summary>
+
+- [Ebazhanov/linkedin-skill-assessments-quizzes](https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes)
+- [DataExpert-io/data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook)
+
+</details>
+
+<details>
+<summary>🔒 <b>Security & Pentesting</b> (1)</summary>
+
+- [BrowserBox/BrowserBox](https://github.com/BrowserBox/BrowserBox)
+
+</details>
+
+<details>
+<summary>💬 <b>Communication</b> (1)</summary>
+
 - [Billionmail/BillionMail](https://github.com/Billionmail/BillionMail)
-- [freqtrade/freqtrade](https://github.com/freqtrade/freqtrade)
-- [pnd280/complexity](https://github.com/pnd280/complexity)
 
 </details>
 
@@ -362,4 +276,3 @@
 *This README is automatically updated every hour by my [GitHub Stars Automation](https://github.com/ketchalegend/github-stars-automation) bot* 🤖
 
 </div>
-<!-- Updated: Sat Mar 14 14:18:28 CET 2026 -->
