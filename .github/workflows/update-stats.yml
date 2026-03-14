@@ -1,116 +1,71 @@
-name: 📊 Update GitHub Stats
+name: Update GitHub Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
-  update-stats:
+  update-readme:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Fetch GitHub Stats via GraphQL
-        id: stats
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Update Stats
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const username = context.repo.owner;
-            const currentYear = new Date().getFullYear();
-
+            const fs = require('fs');
+            const readme = fs.readFileSync('README.md', 'utf8');
+            
+            // Get stats via GraphQL
             const query = `
-              query($username: String!) {
-                user(login: $username) {
+              query($login: String!) {
+                user(login: $login) {
                   starredRepositories { totalCount }
                   repositories(ownerAffiliations: OWNER, isFork: false, first: 100) { totalCount }
                   contributionsCollection {
                     totalCommitContributions
-                    contributionCalendar {
-                      weeks {
-                        contributionDays { contributionCount date }
-                      }
-                    }
                   }
                 }
               }
             `;
-
-            const result = await github.graphql(query, { username });
+            
+            const result = await github.graphql(query, { login: context.repo.owner });
             const user = result.user;
-
-            const starsCount = user.starredRepositories.totalCount;
-            const publicRepos = user.repositories.totalCount;
-            const totalCommits = user.contributionsCollection.totalCommitContributions;
-
-            const weeks = user.contributionsCollection.contributionCalendar.weeks;
-            const days = weeks.flatMap(w => w.contributionDays);
-
-            let currentStreak = 0;
+            
+            const stars = user.starredRepositories.totalCount;
+            const repos = user.repositories.totalCount;
+            const commits = user.contributionsCollection.totalCommitContributions;
             const today = new Date().toISOString().split('T')[0];
-
-            for (let i = days.length - 1; i >= 0; i--) {
-              const day = days[i];
-              if (day.date > today) continue;
-              if (day.contributionCount > 0) {
-                currentStreak++;
-              } else {
-                if (day.date === today) continue;
-                break;
-              }
+            const year = new Date().getFullYear();
+            
+            // Update README
+            let updated = readme
+              .replace(/⭐ Stars Given \| \d+/, `⭐ Stars Given | ${stars}`)
+              .replace(/📁 Public Repos \| \d+/, `📁 Public Repos | ${repos}`)
+              .replace(/🔭 Total Commits \(\d+\) \| \d+/, `🔭 Total Commits (${year}) | ${commits}`)
+              .replace(/Last updated: [\d-]+/, `Last updated: ${today}`);
+            
+            fs.writeFileSync('README.md', updated);
+            
+            // Git config and commit
+            const { execSync } = require('child_process');
+            execSync('git config user.email "action@github.com"');
+            execSync('git config user.name "GitHub Action"');
+            execSync('git add README.md');
+            
+            try {
+              execSync('git diff --staged --quiet');
+              console.log('No changes to commit');
+            } catch {
+              execSync(`git commit -m "Update stats - ${today}"`);
+              execSync('git push');
             }
-
-            let longestStreak = 0;
-            let tempStreak = 0;
-            for (const day of days) {
-              if (day.contributionCount > 0) {
-                tempStreak++;
-                longestStreak = Math.max(longestStreak, tempStreak);
-              } else {
-                tempStreak = 0;
-              }
-            }
-
-            const dateStr = new Date().toISOString().split('T')[0];
-
-            core.setOutput('stars', starsCount);
-            core.setOutput('repos', publicRepos);
-            core.setOutput('commits', totalCommits);
-            core.setOutput('streak', currentStreak);
-            core.setOutput('longest_streak', longestStreak);
-            core.setOutput('date', dateStr);
-            core.setOutput('year', currentYear);
-
-      - name: Update README
-        env:
-          STARS: ${{ steps.stats.outputs.stars }}
-          REPOS: ${{ steps.stats.outputs.repos }}
-          COMMITS: ${{ steps.stats.outputs.commits }}
-          STREAK: ${{ steps.stats.outputs.streak }}
-          LONGEST: ${{ steps.stats.outputs.longest_streak }}
-          DATE: ${{ steps.stats.outputs.date }}
-          YEAR: ${{ steps.stats.outputs.year }}
-        run: |
-          sed -i "s/⭐ Stars Given | [0-9]*/⭐ Stars Given | $STARS/" README.md
-          sed -i "s/📁 Public Repos | [0-9]*/📁 Public Repos | $REPOS/" README.md
-          sed -i "s/🔭 Total Commits ([0-9]*) | [0-9]*/🔭 Total Commits ($YEAR) | $COMMITS/" README.md
-          sed -i "s/🔥 Current Streak | [0-9]* days/🔥 Current Streak | $STREAK days/" README.md
-          sed -i "s/📅 Longest Streak | [0-9]* days/📅 Longest Streak | $LONGEST days/" README.md
-          sed -i "s/Last updated: [0-9-]*/Last updated: $DATE/" README.md
-
-      - name: Commit and push
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "📊 Update GitHub stats - $(date +%Y-%m-%d)"
-            git push
-          fi
-</content>
