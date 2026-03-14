@@ -108,6 +108,7 @@ jobs:
             core.setOutput('year', currentYear);
 
       - name: Update README
+        shell: bash
         run: |
           STARS="${{ steps.stats.outputs.stars }}"
           REPOS="${{ steps.stats.outputs.repos }}"
@@ -117,14 +118,15 @@ jobs:
           DATE="${{ steps.stats.outputs.date }}"
           YEAR="${{ steps.stats.outputs.year }}"
 
-          sed -i "s/| ⭐ Stars Given | [0-9]* |/| ⭐ Stars Given | $STARS |/" README.md
-          sed -i "s/| 📁 Public Repos | [0-9]* |/| 📁 Public Repos | $REPOS |/" README.md
-          sed -i "s/| 🔭 Total Commits ([0-9]*) | [0-9]* |/| 🔭 Total Commits ($YEAR) | $COMMITS |/" README.md
-          sed -i "s/| 🔥 Current Streak | [0-9]* days |/| 🔥 Current Streak | $STREAK days |/" README.md
-          sed -i "s/| 📅 Longest Streak | [0-9]* days |/| 📅 Longest Streak | $LONGEST days |/" README.md
-          sed -i "s/\*Last updated: .*\*/\*Last updated: $DATE\*/" README.md
+          sed -i "s/⭐ Stars Given | [0-9]*/⭐ Stars Given | $STARS/" README.md
+          sed -i "s/📁 Public Repos | [0-9]*/📁 Public Repos | $REPOS/" README.md
+          sed -i "s/🔭 Total Commits ([0-9]*) | [0-9]*/🔭 Total Commits ($YEAR) | $COMMITS/" README.md
+          sed -i "s/🔥 Current Streak | [0-9]* days/🔥 Current Streak | $STREAK days/" README.md
+          sed -i "s/📅 Longest Streak | [0-9]* days/📅 Longest Streak | $LONGEST days/" README.md
+          sed -i "s/Last updated: [0-9-]*/Last updated: $DATE/" README.md
 
       - name: Commit and push
+        shell: bash
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
