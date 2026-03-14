@@ -1,0 +1,138 @@
+name: 📊 Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch GitHub Stats via GraphQL
+        id: stats
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const username = context.repo.owner;
+            const currentYear = new Date().getFullYear();
+
+            // GraphQL query for comprehensive stats
+            const query = `
+              query($username: String!) {
+                user(login: $username) {
+                  starredRepositories {
+                    totalCount
+                  }
+                  repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+                    totalCount
+                  }
+                  contributionsCollection {
+                    totalCommitContributions
+                    contributionCalendar {
+                      totalContributions
+                      weeks {
+                        contributionDays {
+                          contributionCount
+                          date
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `;
+
+            const result = await github.graphql(query, { username });
+            const user = result.user;
+
+            // Extract stats
+            const starsCount = user.starredRepositories.totalCount;
+            const publicRepos = user.repositories.totalCount;
+            const totalCommits = user.contributionsCollection.totalCommitContributions;
+
+            // Calculate streak from contribution calendar
+            const weeks = user.contributionsCollection.contributionCalendar.weeks;
+            const days = weeks.flatMap(w => w.contributionDays);
+
+            // Calculate current streak
+            let currentStreak = 0;
+            const today = new Date().toISOString().split('T')[0];
+
+            // Check from most recent day backwards
+            for (let i = days.length - 1; i >= 0; i--) {
+              const day = days[i];
+              const dayDate = day.date;
+
+              // Skip future dates
+              if (dayDate > today) continue;
+
+              if (day.contributionCount > 0) {
+                currentStreak++;
+              } else {
+                // If it's today and no contributions, don't break streak yet
+                if (dayDate === today) continue;
+                break;
+              }
+            }
+
+            // Calculate longest streak
+            let longestStreak = 0;
+            let tempStreak = 0;
+
+            for (const day of days) {
+              if (day.contributionCount > 0) {
+                tempStreak++;
+                longestStreak = Math.max(longestStreak, tempStreak);
+              } else {
+                tempStreak = 0;
+              }
+            }
+
+            // Format date
+            const now = new Date();
+            const dateStr = now.toISOString().split('T')[0];
+
+            core.setOutput('stars', starsCount);
+            core.setOutput('repos', publicRepos);
+            core.setOutput('commits', totalCommits);
+            core.setOutput('streak', currentStreak);
+            core.setOutput('longest_streak', longestStreak);
+            core.setOutput('date', dateStr);
+            core.setOutput('year', currentYear);
+
+      - name: Update README
+        run: |
+          STARS="${{ steps.stats.outputs.stars }}"
+          REPOS="${{ steps.stats.outputs.repos }}"
+          COMMITS="${{ steps.stats.outputs.commits }}"
+          STREAK="${{ steps.stats.outputs.streak }}"
+          LONGEST="${{ steps.stats.outputs.longest_streak }}"
+          DATE="${{ steps.stats.outputs.date }}"
+          YEAR="${{ steps.stats.outputs.year }}"
+
+          sed -i "s/| ⭐ Stars Given | [0-9]* |/| ⭐ Stars Given | $STARS |/" README.md
+          sed -i "s/| 📁 Public Repos | [0-9]* |/| 📁 Public Repos | $REPOS |/" README.md
+          sed -i "s/| 🔭 Total Commits ([0-9]*) | [0-9]* |/| 🔭 Total Commits ($YEAR) | $COMMITS |/" README.md
+          sed -i "s/| 🔥 Current Streak | [0-9]* days |/| 🔥 Current Streak | $STREAK days |/" README.md
+          sed -i "s/| 📅 Longest Streak | [0-9]* days |/| 📅 Longest Streak | $LONGEST days |/" README.md
+          sed -i "s/\*Last updated: .*\*/\*Last updated: $DATE\*/" README.md
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Update GitHub stats - $(date +%Y-%m-%d)"
+            git push
+          fi
+</content>
