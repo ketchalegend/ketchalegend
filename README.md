@@ -21,6 +21,26 @@ Software Engineer passionate about building scalable products that solve real pr
 
 ---
 
+## ⭐ Starred Repositories by Category
+
+I organize my 2044+ starred repositories using [GitHub Stars Auto-Categorizer](https://github.com/ketchalegend/github-stars-automation):
+
+| Category | Focus |
+|----------|-------|
+| 🤖 AI Agents | Claude, Codex, autonomous agents, LLM tools |
+| 🔗 MCP & Protocols | Model Context Protocol servers and tools |
+| 🗣️ Voice & TTS | Speech synthesis, voice recognition, audio |
+| 🔒 Security & Pentesting | Scanners, vulnerability tools, OSINT |
+| 💻 CLI & Terminal | Command-line tools, TUIs, shell utilities |
+| 🕷️ Web Scraping | Scrapers, crawlers, automation tools |
+| 🛠️ Developer Tools | IDEs, debuggers, frameworks, libraries |
+| 🗄️ Databases & Storage | SQL/NoSQL databases, caches, storage |
+| ☁️ Infrastructure & DevOps | Docker, K8s, cloud tools, CI/CD |
+| 💬 Communication | Chat, messaging, WhatsApp, Telegram bots |
+| 📦 Other | Everything else worth saving |
+
+---
+
 ## 💻 Tech Stack (from 178 repos)
 
 **Top Languages:**
