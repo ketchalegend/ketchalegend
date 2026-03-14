@@ -22,7 +22,7 @@
 | ⭐ **Stars Given** | <!--TOTAL_STARS-->74<!--/TOTAL_STARS--> |
 | 📁 **Repositories** | <!--TOTAL_REPOS-->204<!--/TOTAL_REPOS--> |
 | 💻 **Coding Hours** | <!--CODING_HOURS-->0<!--/CODING_HOURS--> |
-| 📝 **Total Commits** | <!--TOTAL_COMMITS-->2805<!--/TOTAL_COMMITS--> |
+| 📝 **Total Commits** | <!--TOTAL_COMMITS-->2806<!--/TOTAL_COMMITS--> |
 | 🔥 **Current Streak** | <!--STREAK_DAYS-->0<!--/STREAK_DAYS--> days |
 
 </div>
@@ -45,13 +45,13 @@
 
 > ⭐ **<!--TOTAL_STARS-->74<!--/TOTAL_STARS-->** repositories organized by my interests
 
-*Last updated: <!--LAST_UPDATED-->2026-03-14 14:17 UTC<!--/LAST_UPDATED-->*
+*Last updated: <!--LAST_UPDATED-->2026-03-14 14:18 UTC<!--/LAST_UPDATED-->*
 
 <!-- CATEGORIES_START -->
-*📊 74 total starred repositories (shown across 11 categories)*
+*📊 74 total starred repositories organized into 11 categories*
 
 <details>
-<summary>🤖 <b>AI Agents</b> (363 repos)</summary>
+<summary>🤖 <b>AI Agents</b> (363)</summary>
 
 - [HKUDS/CLI-Anything](https://github.com/HKUDS/CLI-Anything)
 - [dolthub/dolt](https://github.com/dolthub/dolt)
@@ -69,7 +69,7 @@
 </details>
 
 <details>
-<summary>📦 <b>Other</b> (263 repos)</summary>
+<summary>📦 <b>Other</b> (263)</summary>
 
 - [pbakaus/impeccable](https://github.com/pbakaus/impeccable)
 - [mcfunley/better-keynote-export](https://github.com/mcfunley/better-keynote-export)
@@ -87,7 +87,7 @@
 </details>
 
 <details>
-<summary>💻 <b>CLI & Terminal Tools</b> (125 unique, 263 total)</summary>
+<summary>💻 <b>CLI & Terminal Tools</b> (125)</summary>
 
 - [vitest-dev/vitest](https://github.com/vitest-dev/vitest)
 - [d99kris/nchat](https://github.com/d99kris/nchat)
@@ -105,7 +105,7 @@
 </details>
 
 <details>
-<summary>🛠️ <b>Developer Tools</b> (78 unique, 248 total)</summary>
+<summary>🛠️ <b>Developer Tools</b> (78)</summary>
 
 - [meteor/meteor](https://github.com/meteor/meteor)
 - [geshan/developer-ambassador-programs](https://github.com/geshan/developer-ambassador-programs)
@@ -123,7 +123,7 @@
 </details>
 
 <details>
-<summary>🗣️ <b>Voice & TTS</b> (44 unique, 66 total)</summary>
+<summary>🗣️ <b>Voice & TTS</b> (44)</summary>
 
 - [cjpais/Handy](https://github.com/cjpais/Handy)
 - [jamiepine/voicebox](https://github.com/jamiepine/voicebox)
@@ -141,7 +141,7 @@
 </details>
 
 <details>
-<summary>🔒 <b>Security & Pentesting</b> (29 unique, 44 total)</summary>
+<summary>🔒 <b>Security & Pentesting</b> (29)</summary>
 
 - [projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)
 - [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)
@@ -159,7 +159,7 @@
 </details>
 
 <details>
-<summary>☁️ <b>Infrastructure & DevOps</b> (27 unique, 107 total)</summary>
+<summary>☁️ <b>Infrastructure & DevOps</b> (27)</summary>
 
 - [goharbor/harbor](https://github.com/goharbor/harbor)
 - [opencost/opencost](https://github.com/opencost/opencost)
@@ -177,7 +177,7 @@
 </details>
 
 <details>
-<summary>🗄️ <b>Databases & Storage</b> (24 unique, 82 total)</summary>
+<summary>🗄️ <b>Databases & Storage</b> (24)</summary>
 
 - [spatie/once](https://github.com/spatie/once)
 - [pgsty/pg_exporter](https://github.com/pgsty/pg_exporter)
@@ -195,7 +195,7 @@
 </details>
 
 <details>
-<summary>🕷️ <b>Web Scraping</b> (19 unique, 74 total)</summary>
+<summary>🕷️ <b>Web Scraping</b> (19)</summary>
 
 - [blitzbrowser/blitzbrowser](https://github.com/blitzbrowser/blitzbrowser)
 - [rudrankriyam/App-Store-Connect-CLI](https://github.com/rudrankriyam/App-Store-Connect-CLI)
@@ -213,7 +213,7 @@
 </details>
 
 <details>
-<summary>🔗 <b>MCP & Protocols</b> (18 unique, 64 total)</summary>
+<summary>🔗 <b>MCP & Protocols</b> (18)</summary>
 
 - [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)
 - [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)
@@ -231,7 +231,7 @@
 </details>
 
 <details>
-<summary>💬 <b>Communication</b> (10 unique, 92 total)</summary>
+<summary>💬 <b>Communication</b> (10)</summary>
 
 - [basecamp/once-campfire](https://github.com/basecamp/once-campfire)
 - [intern3-chat/intern3-chat](https://github.com/intern3-chat/intern3-chat)
