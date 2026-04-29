@@ -1,12 +1,3 @@
-<div align="center">
-
-<!-- Profile Views Counter -->
-<img src="https://komarev.com/ghpvc/?username=ketchalegend&color=36BCF7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
-
-</div>
-
----
-
 ## 🗂️ Starred Repositories by Category
 
 > ⭐ **<!--TOTAL_STARS-->72<!--/TOTAL_STARS-->** repositories organized by my interests
@@ -288,5 +279,8 @@
 <div align="center">
 
 **"Code is like humor. When you have to explain it, it's bad."** – Cory House
+
+<!-- Profile Views Counter -->
+<img src="https://komarev.com/ghpvc/?username=ketchalegend&color=36BCF7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 
 </div>
