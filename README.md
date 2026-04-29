@@ -289,6 +289,4 @@
 
 **"Code is like humor. When you have to explain it, it's bad."** – Cory House
 
-*This README is automatically updated every hour by my [GitHub Stars Automation](https://github.com/ketchalegend/github-stars-automation) bot* 🤖
-
 </div>
