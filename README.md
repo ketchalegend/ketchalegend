@@ -260,7 +260,7 @@
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=ketchalegend&theme=tokyonight&no-frame=true&column=7&margin-w=15&margin-h=15)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=ketchalegend&theme=tokyonight&no-frame=true&no-bg=true&column=9&row=1&margin-w=4&margin-h=4&rank=-C&title=MultiLanguage,Repositories,Commits,Experience,Followers,Stars,PullRequest,Reviews)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
