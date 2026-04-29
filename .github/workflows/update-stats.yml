@@ -91,6 +91,11 @@ jobs:
               .replace(/📊 Total Contributions \| \d+/g, `📊 Total Contributions | ${totalContributions}`)
               .replace(/🔥 Current Streak \| \d+ days/g, `🔥 Current Streak | ${currentStreak} days`)
               .replace(/🏆 Longest Streak \| \d+ days/g, `🏆 Longest Streak | ${longestStreak} days`)
+              .replace(/<!--TOTAL_STARS-->\d+<!--\/TOTAL_STARS-->/g, `<!--TOTAL_STARS-->${starsGiven}<!--/TOTAL_STARS-->`)
+              .replace(/<!--TOTAL_REPOS-->\d+<!--\/TOTAL_REPOS-->/g, `<!--TOTAL_REPOS-->${totalRepos}<!--/TOTAL_REPOS-->`)
+              .replace(/<!--TOTAL_COMMITS-->\d+<!--\/TOTAL_COMMITS-->/g, `<!--TOTAL_COMMITS-->${totalContributions}<!--/TOTAL_COMMITS-->`)
+              .replace(/<!--STREAK_DAYS-->\d+<!--\/STREAK_DAYS-->/g, `<!--STREAK_DAYS-->${currentStreak}<!--/STREAK_DAYS-->`)
+              .replace(/<!--LAST_UPDATED-->.*?<!--\/LAST_UPDATED-->/g, `<!--LAST_UPDATED-->${todayStr}<!--/LAST_UPDATED-->`)
               .replace(/Last updated: [\d-]+/g, `Last updated: ${todayStr}`);
 
             fs.writeFileSync('README.md', readme);

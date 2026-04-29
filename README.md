@@ -1,6 +1,6 @@
 ## 🗂️ Starred Repositories by Category
 
-> ⭐ **<!--TOTAL_STARS-->72<!--/TOTAL_STARS-->** repositories organized by my interests
+> ⭐ **<!--TOTAL_STARS-->2397<!--/TOTAL_STARS-->** repositories organized by my interests
 
 *Last updated: <!--LAST_UPDATED-->2026-04-29 11:30 UTC<!--/LAST_UPDATED-->*
 
