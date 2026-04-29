@@ -1,8 +1,5 @@
 <div align="center">
 
-<!-- Typing Animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7FF&center=true&vCenter=true&random=false&width=600&lines=Full+Stack+Developer;AI+%26+Automation+Enthusiast;Open+Source+Contributor;Lifelong+Learner)](https://git.io/typing-svg)
-
 <!-- Profile Views Counter -->
 <img src="https://komarev.com/ghpvc/?username=ketchalegend&color=36BCF7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 
