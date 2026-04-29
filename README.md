@@ -1,42 +1,11 @@
 <div align="center">
 
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=ketchalegend&fontSize=90&fontAlignY=35&desc=Building%20the%20future%2C%20one%20commit%20at%20a%20time&descSize=20&descAlignY=55&animation=fadeIn" />
-
 <!-- Typing Animation -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7FF&center=true&vCenter=true&random=false&width=600&lines=Full+Stack+Developer;AI+%26+Automation+Enthusiast;Open+Source+Contributor;Lifelong+Learner)](https://git.io/typing-svg)
 
 <!-- Profile Views Counter -->
 <img src="https://komarev.com/ghpvc/?username=ketchalegend&color=36BCF7&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 
-</div>
-
----
-
-## 🎯 Quick Stats
-
-<div align="center">
-
-| 📊 **Metric** | 🔢 **Value** |
-|:--|--:|
-| ⭐ **Stars Given** | <!--TOTAL_STARS-->72<!--/TOTAL_STARS--> |
-| 📁 **Repositories** | <!--TOTAL_REPOS-->206<!--/TOTAL_REPOS--> |
-| 💻 **Coding Hours** | <!--CODING_HOURS-->0<!--/CODING_HOURS--> |
-| 📝 **Total Commits** | <!--TOTAL_COMMITS-->3370<!--/TOTAL_COMMITS--> |
-| 🔥 **Current Streak** | <!--STREAK_DAYS-->0<!--/STREAK_DAYS--> days |
-
-</div>
-
-<div align="center">
-  
-  <!-- GitHub Stats Cards -->
-  <img src="https://github-readme-stats.vercel.app/api?username=ketchalegend&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&text_color=FFFFFF&rank_icon=github" height="180" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ketchalegend&theme=tokyonight&hide_border=true&background=0D1117&stroke=36BCF7&ring=36BCF7&fire=FF6B6B&currStreakLabel=36BCF7" height="180" />
-  
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ketchalegend&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=36BCF7&line=36BCF7&point=FF6B6B" width="100%" />
 </div>
 
 ---
@@ -250,21 +219,6 @@
 
 ---
 
-## 🚀 Featured Projects
-
-<div align="center">
-
-<!-- Project Card 1 -->
-<a href="https://github.com/ketchalegend/github-stars-automation">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=ketchalegend&repo=github-stars-automation&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=36BCF7&icon_color=36BCF7&text_color=FFFFFF" />
-</a>
-
-<!-- Add more pinned repos here -->
-
-</div>
-
----
-
 ## 🛠️ Tech Stack
 
 <div align="center">
@@ -314,21 +268,6 @@
 
 ---
 
-## 📈 Contribution Graph
-
-<div align="center">
-
-<!-- Snake Animation -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ketchalegend/ketchalegend/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ketchalegend/ketchalegend/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/ketchalegend/ketchalegend/output/github-contribution-grid-snake.svg">
-</picture>
-
-</div>
-
----
-
 ## 🏆 GitHub Trophies
 
 <div align="center">
@@ -344,18 +283,12 @@
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ketchalegend)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ketchalegend)
-[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/ketchalegend)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ketchalegend.dev)
 
 </div>
 
 ---
 
 <div align="center">
-
-<!-- Footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=120&section=footer" />
 
 **"Code is like humor. When you have to explain it, it's bad."** – Cory House
 
